@@ -1,7 +1,8 @@
-import '../styles/tailwind.css'
 import type { AppProps } from 'next/app'
 import { Hydrate, QueryClient, QueryClientProvider } from 'react-query'
 import { useState } from 'react'
+
+import '../styles/tailwindcss.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(() => new QueryClient())
